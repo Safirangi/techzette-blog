@@ -3,6 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /*background-image: url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VydmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat; */
 }
 * {
   padding: 0;
@@ -58,3 +60,10 @@ form button {
   box-shadow: 0 7px 15px rbga(22, 5, 107, 0.3);
   font-family: "Poppins", sans-serif;
 }
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
