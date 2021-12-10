@@ -166,3 +166,59 @@ ol li a:hover {
   margin-bottom: 0;
   font-family: "Noto Sans", sans-serif;
 }
+
+#slider {
+  overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 30s slider infinite;
+  padding-top: 15%;
+}
+#slider figure img {
+  width: 20%;
+  height: 540px;
+  float: left;
+  padding: 0 25px;
+  border-radius: 25px;
+  margin: 0;
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+.slider-text {
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+  max-height: 800px;
+}
+
