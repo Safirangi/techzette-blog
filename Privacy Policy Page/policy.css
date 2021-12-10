@@ -169,3 +169,19 @@ ol li a:hover {
 .list {
   line-height: 50px;
 }
+.info {
+  font-style: italic;
+  color: #747070;
+  line-height: 30px;
+  text-decoration: none;
+}
+.info a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.info a:hover {
+  color: rgb(153, 151, 151);
+}
+.contact {
+  padding-top: 30px;
+}
