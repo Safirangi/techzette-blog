@@ -31,7 +31,7 @@
   letter-spacing: 0.1em;
   font-style: italic;
   font-size: 22px;
-  color: #dcc8e4;
+  color: #fff;
   font-family: "Noto Sans", sans-serif;
 }
 .navbar {
@@ -57,9 +57,9 @@ ol li a {
 }
 ol li a:hover {
   text-transform: uppercase;
-  color: #dbefcc;
+  color: #fff;
   letter-spacing: 0.1em;
-  border-bottom: 1px solid #dbefcc;
+  border-bottom: 1px solid #fff;
 }
 
 h2 {
@@ -98,12 +98,15 @@ form input {
   border: 1px solid #8c8f94;
   font-family: "Noto Sans", sans-serif;
   background-color: #fff;
+  color: #4b1b05;
 }
 form input:focus {
-  border-color: #16056b;
+  border-color: #4b1b05;
+  color: #4b1b05;
 }
 .check-box {
   display: flex;
+  accent-color: #4b1b05;
 }
 .check-box label {
   font-size: 10px;
@@ -113,7 +116,7 @@ form button {
   border: none;
   outline: none;
   padding: 11px 0;
-  background: #000;
+  background: #292929;
   color: #fff;
   font-size: 18px;
   /*box-shadow: 0 7px 15px rbga(22, 5, 107, 0.3); */
@@ -145,24 +148,25 @@ form button:hover {
 }    */
 .policy {
   font-style: normal;
-  color: #153840;
+  color: #301302;
 }
 .policy:hover {
   font-style: italic;
-  color: #55817e;
+  color: #4b1b05;
+  text-decoration: none;
 }
 .login {
   font-size: 12px;
   font-style: normal;
-  color: #153840;
+  color: #301302;
 }
 .login:hover {
   font-style: italic;
-  color: #55817e;
+  color: #4b1b05;
 }
 
 .footer {
-  background-color: #000;
+  background-color: #292929;
   height: 325px;
   bottom: 0;
   position: absolute;
