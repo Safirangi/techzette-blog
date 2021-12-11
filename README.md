@@ -7,3 +7,4 @@ Tech Blog Website
 4. Blog/Articles Page
 5. About Us Page
 6. Contact Us Page
+7. Privacy Policy Page
