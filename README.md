@@ -1,5 +1,5 @@
 # Project-Work
-Tech Blog Website 
+Tech Blog Website : Project for 3rd Semester
 
 1. Sign Up Page
 2. Log In Page
