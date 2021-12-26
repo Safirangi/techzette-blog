@@ -58,7 +58,7 @@
 ol li {
   list-style: none;
   display: inline;
-  margin: 0 30px;
+  margin: 0 40px;
 }
 ol li a {
   color: #fff;
@@ -81,8 +81,8 @@ ol li a:hover {
   width: 100%;
   top: 75%;
   margin-top: 200px;
-  margin-bottom: 0px;
-  padding-top: 0px;
+  margin-bottom: 0;
+  padding-top: 0;
 }
 
 .footer ul {
@@ -198,3 +198,96 @@ ol li a:hover {
   padding: 5px 150px 5px;
   font-style: italic;
 }
+.contact-form {
+  width: 450px;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-family: "Noto Sans", sans-serif;
+  opacity: 0.875;
+  padding: 0 15px;
+  margin: 0 auto;
+  border-radius: 4px;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+}
+form {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Noto Sans", sans-serif;
+}
+form input {
+  padding: 12px 7px;
+  outline: none;
+  border: 1px solid #8c8f94;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #fff;
+  color: #4b1b05;
+}
+form input:focus {
+  border-color: #4b1b05;
+  color: #4b1b05;
+}
+.check-box {
+  display: flex;
+  accent-color: #4b1b05;
+}
+.check-box label {
+  font-size: 10px;
+  padding: 0 5px;
+}
+form button {
+  border: none;
+  outline: none;
+  padding: 11px 0;
+  background: #292929;
+  color: #fff;
+  font-size: 18px;
+  /*box-shadow: 0 7px 15px rbga(22, 5, 107, 0.3); */
+  font-family: "Noto Sans", sans-serif;
+  box-shadow: inset 0 0 0 0 #4b1b05;
+  border-radius: 1px;
+  transition: ease-out 0.4s;
+}
+form button:hover {
+  box-shadow: inset 300px 0 0 0 #4b1b05;
+  cursor: pointer;
+}
+form a {
+  color: #121212;
+}
+form a:hover {
+  color: #4b1b05;
+  font-style: italic;
+}
+.intro-text h2 {
+  margin: 0 5px 20px;
+  font-size: 20px;
+}
+.social {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #121212;
+  margin: 0 8px;
+  color: #121212;
+  opacity: 0.75;
+}
+.social > a:hover {
+  opacity: 0.9;
+}
+
