@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Georama&display=swap");
+
+.body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover; /*or background-size: 100%;  */
+  flex-direction: column;
+  background-color: #fff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 450px;
+  background-image: url("/img/book1.jpg");
+  filter: brightness(85%);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+}
+.container h1 {
+  font-family: "Georama", sans-serif;
+  padding: 20px;
+  font-size: 75px;
+  filter: brightness(100%);
+  text-align: center;
+}
+.container p {
+  color: #fff;
+  font-style: italic;
+  font-family: "Georama", sans-serif;
+  text-align: center;
+  font-size: 25px;
+  filter: brightness(100%);
+}
+.navbar {
+  margin-top: 0 0 0 0;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  font-size: 17px;
+  font-family: "Georama", sans-serif;
+}
+ol li {
+  list-style: none;
+  display: inline;
+  margin: 0 40px;
+}
+ol li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+  letter-spacing: 0.07em;
+  padding-bottom: 3px;
+}
+ol li a:hover {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #fff;
+}
+.footer {
+  background-color: #292929;
+  height: 325px;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  top: 75%;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+.footer ul {
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.footer li {
+  padding: 0 10px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.footer ul a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  padding-top: 0px;
+  font-family: "Noto Sans", sans-serif;
+  transition: 0.4s;
+}
+
+.footer ul a:hover {
+  opacity: 1;
+  font-family: "Noto Sans", sans-serif;
+  font-style: italic;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 35px;
+}
+
+.footer .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: white;
+  opacity: 0.75;
+}
+
+.footer .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar a:hover {
+  background-color: #000;
+}
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+.twitter {
+  background: #55acee;
+  color: white;
+}
+.google {
+  background: #dd4b39;
+  color: white;
+}
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar a:hover {
+  background-color: #000;
+}
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+.twitter {
+  background: #55acee;
+  color: white;
+}
+.google {
+  background: #dd4b39;
+  color: white;
+}
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+.privacy-policy {
+  color: #3a3939;
+  text-align: justify;
+  padding: 130px 200px;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 40px;
+}
+.heading {
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+}
+.subheading {
+  text-align: left;
+  text-decoration: none;
+  line-height: 50px;
+}
+.para {
+  line-height: 30px;
+}
+.comment-section {
+  font-family: "Noto Sans", sans-serif;
+  height: 50px;
+}
+.input[type="text"],
+select,
+textarea {
+  width: 50%;
+  padding: 6px 50px;
+  border: 1px solid #ccc;
+  margin: 6px 300px 16px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: #292929;
+  color: white;
+  padding: 12px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 0 300px;
+  font-family: "Noto Sans", sans-serif;
+  transition: ease-out 0.4s;
+  box-shadow: inset 0 0 0 0 #4b1b05;
+}
+
+input[type="submit"]:hover {
+  box-shadow: inset 300px 0 0 0 #4b1b05;
+  cursor: pointer;
+}
+form label {
+  font-style: "Georama", sans-serif;
+  font-size: 20px;
+  padding: 0px;
+  margin: 295px;
+}
