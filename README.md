@@ -1,4 +1,4 @@
-# Project-Work
+# Project-Work : Techzette
 Tech Blog Website : Project for 3rd Semester
 
 1. Sign Up Page
