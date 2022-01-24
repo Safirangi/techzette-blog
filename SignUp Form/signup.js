@@ -9,8 +9,8 @@ function SignUp() {
   } else if (email == null || email == "") {
     alert("Email cannot be blank");
     return false;
-  } else if (password.length < 8) {
-    alert("Password cannot be less than 8 characters");
+  } else if (password.length < 6) {
+    alert("Password cannot be less than 6 characters");
     return false;
   } else if (password == "password") {
     alert("This password is invalid");
