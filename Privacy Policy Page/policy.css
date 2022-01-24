@@ -18,11 +18,12 @@
 .container {
   height: 450px;
   background-image: url("/img/book1.jpg");
-  filter: brightness(80%);
+  filter: brightness(85%);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,40 +47,47 @@
   filter: brightness(100%);
 }
 .navbar {
-  margin-top: 0 0 0 0;
+  margin-top: 0 5px 0 0;
   padding: 0 0 0 0;
   display: flex;
   justify-content: space-between;
-  float: right;
+  align-items: center;
+  float: top;
   font-size: 17px;
   font-family: "Georama", sans-serif;
+  color: #fff;
+  background-color: #292929;
+  width: 100%;
+  height: 50px;
 }
 ol li {
   list-style: none;
   display: inline;
-  margin: 0 30px;
+  margin: 0 45px;
+  color: #fff;
+  background-color: #292929;
 }
 ol li a {
   color: #fff;
   text-decoration: none;
   transition: 0.4s;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.07em;
   padding-bottom: 3px;
 }
 ol li a:hover {
   text-transform: uppercase;
-  color: #dbefcc;
+  color: #fff;
   letter-spacing: 0.1em;
-  border-bottom: 1px solid #dbefcc;
+  border-bottom: 1px solid #fff;
 }
 .footer {
-  background-color: #0f0f0f;
+  background-color: #292929;
   height: 325px;
   bottom: 0;
   position: relative;
   width: 100%;
   top: 75%;
-  margin-top: 200px;
+  margin-top: 80px;
   margin-bottom: 0px;
   padding-top: 0px;
 }
@@ -151,7 +159,7 @@ ol li a:hover {
   text-align: justify;
   padding: 130px 200px;
   font-family: "Noto Sans", sans-serif;
-  line-height: 30px;
+  line-height: 40px;
 }
 .heading {
   text-align: center;
@@ -167,13 +175,14 @@ ol li a:hover {
   line-height: 30px;
 }
 .list {
-  line-height: 50px;
+  line-height: 30px;
 }
 .info {
   font-style: italic;
   color: #747070;
   line-height: 30px;
   text-decoration: none;
+  margin-bottom: 0px;
 }
 .info a {
   text-decoration: none;
@@ -224,4 +233,37 @@ ol li a:hover {
   background: #bb0000;
   color: white;
 }
+.query-section {
+  font-family: "Noto Sans", sans-serif;
+}
+.input[type="text"],
+select,
+textarea {
+  width: 50%;
+  padding: 6px 50px;
+  border: 0.5px solid #ccc;
+  margin: 6px 300px 16px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+input[type="submit"] {
+  background-color: #292929;
+  color: white;
+  padding: 12px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 300px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #4b1405;
+}
+form label {
+  font-style: "Georama", sans-serif;
+  font-size: 20px;
+  padding: 0px;
+  margin: 295px;
+}
