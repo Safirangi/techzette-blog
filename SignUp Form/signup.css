@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover; /*or background-size: 100%;  */
   background-position: center;
+  background-attachment: fixed;
   flex-direction: column;
 }
 * {
@@ -164,7 +165,6 @@ form button:hover {
   font-style: italic;
   color: #4b1b05;
 }
-
 .footer {
   background-color: #292929;
   height: 325px;
@@ -176,7 +176,6 @@ form button:hover {
   margin-bottom: 0px;
   padding-top: 0px;
 }
-
 .footer ul {
   padding: 0px;
   list-style: none;
@@ -186,12 +185,10 @@ form button:hover {
   margin-bottom: 0;
   font-family: "Noto Sans", sans-serif;
 }
-
 .footer li {
   padding: 0 10px;
   font-family: "Noto Sans", sans-serif;
 }
-
 .footer ul a {
   color: white;
   text-decoration: none;
@@ -200,19 +197,16 @@ form button:hover {
   font-family: "Noto Sans", sans-serif;
   transition: 0.4s;
 }
-
 .footer ul a:hover {
   opacity: 1;
   font-family: "Noto Sans", sans-serif;
   font-style: italic;
 }
-
 .footer .social {
   text-align: center;
   padding-bottom: 40px;
   padding-top: 35px;
 }
-
 .footer .social > a {
   font-size: 24px;
   width: 40px;
@@ -226,11 +220,9 @@ form button:hover {
   color: white;
   opacity: 0.75;
 }
-
 .footer .social > a:hover {
   opacity: 0.9;
 }
-
 .footer .copyright {
   margin-top: 15px;
   text-align: center;
