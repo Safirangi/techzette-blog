@@ -241,3 +241,99 @@ form button {
   color: #aaa;
   font-family: var(--font1);
 }
+
+/*Responsive for 320px screen width devices*/
+@media (max-width: 320px) {
+  * {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .container {
+    width: 15em;
+    height: 22em;
+    padding: 0 2em;
+    margin: 1em 0;
+  }
+  .brand {
+    font-size: 1em;
+    text-align: center;
+    justify-content: center;
+    margin: 0.5em 3em;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 3em;
+    background: #292929;
+    opacity: 0.8;
+  }
+  .navbar ol li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-bottom: 1px solid #fff;
+    align-items: center;
+  }
+  h2 {
+    padding-top: 0.7em;
+    font-size: 1.2em;
+  }
+  .intro-text p {
+    margin: 0.2em 0 0 0;
+    font-size: 0.8em;
+  }
+  form {
+    height: 16em;
+    width: 13em;
+  }
+  form input {
+    padding: 0.7em 0.7em;
+  }
+  form button {
+    padding: 0.7em 0;
+    font-size: 0.9em;
+  }
+  .card {
+    position: absolute;
+    margin: 15em 0 0 0;
+  }
+  .footer {
+    background-color: #292929;
+    height: 20em;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    margin: 22em 0 0;
+    padding-top: 0;
+  }
+  .footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.8;
+    margin-bottom: 0;
+  }
+  .footer li {
+    padding: 0 1em;
+    font-family: var(--font1);
+  }
+  .footer ul a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    padding-top: 0;
+    font-family: var(--font1);
+    transition: 0.4s;
+  }
+  .submit,
+  .cancel {
+    width: 5.7em;
+    height: 2.5em;
+  }
+}
+
