@@ -70,6 +70,8 @@ header img {
   font-size: 1.8em;
   filter: brightness(100%);
 }
+
+/*Navigation Bar*/
 .navbar {
   margin: 0 1em 0 0;
   padding: 0 0 0 0;
@@ -110,6 +112,9 @@ ol li a:hover {
   letter-spacing: 0.1em;
   border-bottom: 1px solid #fff;
 }
+/*Navigation Bar*/
+
+/*Footer*/
 .footer {
   background-color: #292929;
   height: 20em;
@@ -120,7 +125,6 @@ ol li a:hover {
   margin: 11em 0 0;
   padding-top: 0;
 }
-
 .footer ul {
   padding: 0px;
   list-style: none;
@@ -130,12 +134,10 @@ ol li a:hover {
   margin-bottom: 0;
   font-family: var(--font1);
 }
-
 .footer li {
   padding: 0 1em;
   font-family: var(--font1);
 }
-
 .footer ul a {
   color: #fff;
   text-decoration: none;
@@ -144,18 +146,15 @@ ol li a:hover {
   font-family: var(--font1);
   transition: 0.4s;
 }
-
 .footer ul a:hover {
   opacity: 1;
   font-family: var(--font1);
   font-style: italic;
 }
-
 .footer .social {
   text-align: center;
   padding: 2em 0 1em;
 }
-
 .footer .social > a {
   font-size: 1.3em;
   width: 2em;
@@ -169,11 +168,9 @@ ol li a:hover {
   color: #fff;
   opacity: 0.75;
 }
-
 .footer .social > a:hover {
   opacity: 0.9;
 }
-
 .footer .copyright {
   margin: 3em 0 0;
   text-align: center;
@@ -181,63 +178,19 @@ ol li a:hover {
   color: #aaa;
   font-family: var(--font1);
 }
-#slider {
-  overflow: hidden;
-  position: relative;
+/*Footer*/
+
+/*Introduction text*/
+.introduction {
+  font-family: var(--font1);
+  font-style: italic;
   text-align: center;
-  color: #fff;
+  padding: 3em 0 2em 0;
+  font-size: 1em;
 }
-#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 30s slider infinite;
-  padding-top: 15%;
-}
-#slider figure img {
-  width: 20%;
-  height: 540px;
-  float: left;
-  padding: 0 25px;
-  border-radius: 25px;
-  margin: 0;
-}
-@keyframes slider {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
-}
-.slider-text {
-  position: relative;
-  margin: 0 auto;
-  max-width: 800px;
-  max-height: 800px;
-}
+/*Introduction text*/
+
+/*Icon Bar*/
 .icon-bar {
   position: fixed;
   top: 50%;
@@ -277,6 +230,9 @@ ol li a:hover {
   background: #bb0000;
   color: white;
 }
+/*Icon Bar*/
+
+/*Grid*/
 .cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(20em, 1fr));
@@ -341,3 +297,32 @@ ol li a:hover {
 .read-more a:hover {
   color: rgb(95, 91, 91);
 }
+/*grid*/
+
+/*Splide.js Slider*/
+.splide {
+  max-width: 890px;
+  height: 500px;
+  image-resolution: initial;
+  overflow: hidden;
+  margin: 3em auto;
+  position: relative;
+}
+.splide .hero-heading-main {
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  color: #222;
+  font-family: var(--font1);
+  right: 0;
+  background: #fbfbfb;
+  width: 290px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 0 0 0.2em 0.2em;
+}
+.splide__slide h1 {
+  color: #fff;
+  z-index: 300;
+}
+/*Splide.js Slider*/
