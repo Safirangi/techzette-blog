@@ -86,9 +86,27 @@
       </ul>
     </aside>
 
+<!--In this Article List-->
+<aside class="headline-list">
+      <h4>In this article</h4>
+      <ul>
+        <li><a href="#h1">Introduction</a></li>
+        <li><a href="#h2">What is "open source", anyway?</a></li>
+        <li><a href="#h3">Do open source contributions required a coding background?</a></li>
+        <li><a href="#h4">What are the key open source terms that I should know?</a></li>
+        <li><a href="#h5">Where can I contribute?</a></li>
+        <li><a href="#h6">How do I contribute?</a></li>
+        <li><a href="#h7">What are good resources for learning command line Git?</a></li>
+        <li><a href="#h8">What if I get stuck?</a></li>
+        <li><a href="#h9">How do I add back in my changes?</a></li>
+        <li><a href="#h10">So I submitted a pull request. What’s next?</a></li>
+      </ul>
+    </aside>
+
+        
 <!--Content-->
 <div class="article-content">
-  <h1 class="heading">99 [PR]oblems: A Beginner’s Guide to Open Source</h1>
+  <h1 class="heading" id="h1">99 [PR]oblems: A Beginner’s Guide to Open Source</h1>
     <p class="para">Between interviewing for full-time positions and finishing up my computer science degree, I’ve been hard-pressed to find the time and motivation to tinker. 
       In an effort to reinvigorate the creativity that initially brought me to computer science, I turned to open source. I figured it would be more purposeful than kicking 
       off another personal project or attending hackathons since many products that I use on a daily basis are maintained by the community. What better way to hone my software 
@@ -106,13 +124,13 @@
     <p class="para">Because contributing to open source validated and grew my existing engineering acumen, I wish to augment its accessibility. To do this, I’ve crafted a 
       brief guide to open source for those unfamiliar with it punctuated by reflections from my first contribution.</p>
 <br>
-  <h3 class="subheading">What is “open source,” anyway?</h3>
+  <h3 class="subheading" id="h2">What is “open source,” anyway?</h3>
   <p class="para">Open source means any product or service whose codebase is displayed publicly online, and is available for improvement by anyone. Open source is the opposite 
     of closed source, or the case in which a product or service does not have a publicly accessible codebase. Open source projects are built and continuously updated by
     maintainers— engineers dedicated to managing and building a given project as a job or side hustle — and anyone else who wishes to contribute (like you!). Contributing to
     open source allows you to give back to products and communities that matter to you.</p>
 <br>
-  <h3 class="subheading">Do open source contributions required a coding background?</h3>
+  <h3 class="subheading" id="h3">Do open source contributions required a coding background?</h3>
     <p class="para">No! Many open source repositories have a documentation file that essentially explains their purpose and how to run the code. These files are typically 
       written in Markdown, which is regular text with supplementary styling (e.g. emboldening, italicization, bullet-ing), and are almost always called README.md. Updating or 
       clarifying the documentation still counts as an open source contribution, and can be a great way for a beginner to understand the workflow behind GitHub and contributing 
@@ -123,7 +141,7 @@
       (more on this shortly), people use it for more than code. Once again, editing these repositories does count as a real open source contribution, and can be a safe way to
       get comfortable with the mechanics of GitHub.</p>
 <br>
-  <h3 class="subheading">What are the key open source terms that I should know?</h3>
+  <h3 class="subheading" id="h4">What are the key open source terms that I should know?</h3>
     <p class="para">Besides the emboldened terms that have already been mentioned, there are a few other helpful ones to know:<br>
       <ul>
         <li><b>Git</b> : Open source version control system that allows you and your collaborators (if any) to save multiple versions of code simultaneously. Git can be used on 
@@ -143,7 +161,7 @@
       </ul>
     </p>
 <br>
-  <h3 class="subheading">Where can I contribute?</h3>
+  <h3 class="subheading" id="h5">Where can I contribute?</h3>
     <p class="para">From a bird’s eye view, the place to make open source contributions is GitHub. More specifically, to find out if a particular GitHub repository that 
       interests you is seeking open source contributions, look under its “Issues” tab. If issues are still “open”, then the maintainer(s) must need someone to work on them!</p>
 
@@ -164,7 +182,7 @@
       </ul>
     </p>
 <br>
-  <h3 class="subheading">How do I contribute?</h3>
+  <h3 class="subheading" id="h6">How do I contribute?</h3>
     <p class="para"></p>So you’ve found an open issue that you’d like to tackle. Wonderful! Let the maintainer(s) know by commenting on that issue. Wait for one of them to 
     acknowledge your comment before getting started. Once a maintainer approves you as a contributor, then you can dive into the code.</p>
 
@@ -186,7 +204,7 @@
       asking the maintainer(s) if any guidelines exist. For some repositories, consistency in commit messages and coding styles allows the maintainer(s) to keep track of 
       changes lest anything go wrong.</p>
 <br>
-  <h3 class="subheading">What are good resources for learning command line Git?</h3>
+  <h3 class="subheading" id="h7">What are good resources for learning command line Git?</h3>
     <p class="para">Although forking and searching for repositories can be done on the GitHub website, much of the heavy-duty work of contributing to open source is done 
       offline utilizing the command line. If you are unfamiliar with accessing and updating GitHub repositories from the command line, I suggest checking out some of the 
       following websites:<br>
@@ -198,10 +216,10 @@
        </ul>
     </p>
 <br>
-  <h3 class="subheading">What if I get stuck?</h3>
+  <h3 class="subheading" id="h8">What if I get stuck?</h3>
     <p class="para">Go on GitHub and alert the maintainer(s)! Chances are, they will be willing to point you in the right direction.</p>
 <br>
-  <h3 class="subheading">How do I add back in my changes?</h3>
+  <h3 class="subheading" id="h9">How do I add back in my changes?</h3>
     <p class="para">Press the “New Pull Request” button in your forked repository on the GitHub website. This is the formal way of asking to have your changes reviewed and, 
       if successful, merged into the codebase. GitHub will automatically compare your changes to the original repository, and prompt you to write a brief message explaining 
       your additions to the maintainers.</p>
@@ -211,7 +229,7 @@
         <figcaption>I felt so nervous before asking to add in my changes!</figcaption>
       </figure>
 
-  <h3 class="subheading">So I submitted a pull request. What’s next?</h3>
+  <h3 class="subheading" id="h10">So I submitted a pull request. What’s next?</h3>
     <p class="para">Wait for the maintainer(s) and other designated code reviewers to check out your changes and see if they address the original issue as desired. If not, 
       the maintainer will likely ask you to improve upon your contribution. If all goes well, your pull request will be approved. After approval, the maintainer(s) will merge 
       your contributions into the codebase.</p>
