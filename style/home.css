@@ -310,7 +310,7 @@ ol li a:hover {
 }
 .splide .hero-heading-main {
   position: absolute;
-  z-index: 200;
+  z-index: 1;
   left: 0;
   color: #222;
   font-family: var(--font1);
@@ -318,11 +318,18 @@ ol li a:hover {
   background: #fbfbfb;
   width: 290px;
   text-align: center;
-  margin: 0 auto;
-  border-radius: 0 0 0.2em 0.2em;
+  margin: 1em auto;
+  border-radius: 0.2em;
+  opacity: 0.7;
 }
-.splide__slide h1 {
+.splide .content {
+  position: absolute;
+  bottom: 0;
   color: #fff;
-  z-index: 300;
+  background: rgba(0, 0, 0, 0.5);
+  color: f1f1f1;
+  width: 100%;
+  padding: 2em;
+  font-family: var(--font1);
 }
 /*Splide.js Slider*/
