@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
+/*BASE STYLE*/
 :root {
   --font1: "Noto Sans", sans-serif;
 }
@@ -18,6 +19,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*BASE STYLE*/
+
+/*NAVBAR*/
 .brand {
   float: left;
   display: inline-flex;
@@ -64,6 +68,9 @@ ol li a:hover {
   letter-spacing: 0.1em;
   border-bottom: 1px solid #fff;
 }
+/*NAVBAR*/
+
+/*HEADER*/
 h2 {
   text-align: center;
   font-family: var(--font1);
@@ -73,6 +80,9 @@ p {
   text-align: center;
   font-family: var(--font1);
 }
+/*HEADER*/
+
+/*FORM*/
 .btn {
   display: flex;
   flex-direction: row;
@@ -81,7 +91,7 @@ p {
 }
 .submit {
   width: 5.5em;
-  height: 2.5;
+  height: 2.5em;
   box-shadow: inset 0 0 0 0 #4b1b05;
   font-family: var(--font1);
   border-radius: 0.1em;
@@ -177,6 +187,9 @@ form button {
   transform: translate(-50%, -50%);
   margin: 1em 0 0 0;
 }
+/*FORM*/
+
+/*FOOTER*/
 .footer {
   background-color: #292929;
   height: 20em;
@@ -229,11 +242,9 @@ form button {
   color: #fff;
   opacity: 0.75;
 }
-
 .footer .social > a:hover {
   opacity: 0.9;
 }
-
 .footer .copyright {
   margin: 3em 0 0;
   text-align: center;
@@ -241,6 +252,7 @@ form button {
   color: #aaa;
   font-family: var(--font1);
 }
+/*FOOTER*/
 
 /*Responsive for 320px screen width devices*/
 @media (max-width: 320px) {
