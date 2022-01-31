@@ -18,7 +18,7 @@
 }
 .container {
   height: 450px;
-  background-image: url("img/book1.jpg");
+  /*background-image: url("img/book1.jpg");*/
   filter: brightness(85%);
   width: 100%;
   background-repeat: no-repeat;
@@ -31,6 +31,18 @@
   flex-direction: column;
   color: #fff;
   font-family: "Noto Sans", sans-serif;
+}
+header img {
+  height: 28em;
+  width: 100%;
+  /*background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;*/
 }
 .container h1 {
   font-family: "Georama", sans-serif;
