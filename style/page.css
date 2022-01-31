@@ -26,7 +26,7 @@
 /*HEADER*/
 .container {
   height: 28em;
-  background-image: url("/img/coding3.jpg");
+  background-image: url("img/coding3.jpg");
   filter: brightness(85%);
   width: 100%;
   background-repeat: no-repeat;
@@ -288,7 +288,7 @@ figure figcaption {
 
 /*COMMENT SECTION*/
 .comment-section {
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font1);
   height: 2em;
 }
 .input[type="text"],
