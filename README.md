@@ -1,6 +1,8 @@
 # Project-Work : Techzette
 Tech Blog Website : Project for 3rd Semester
 
+[Techzette](https://swatiaf.github.io/techzette-blog/)
+
 1. Sign Up Page
 2. Log In Page
 3. Home Page
