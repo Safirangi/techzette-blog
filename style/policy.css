@@ -17,7 +17,7 @@
 }
 .container {
   height: 450px;
-  background-image: url("/img/book1.jpg");
+  background-image: url("img/book1.jpg");
   filter: brightness(85%);
   width: 100%;
   background-repeat: no-repeat;
