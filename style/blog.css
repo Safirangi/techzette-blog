@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Georama&display=swap");
 
+/*BASE STYLE*/
+:root {
+  --font1: "Noto Sans", sans-serif;
+  --font2: "Georama", sans-serif;
+}
 .body {
   height: 100vh;
   display: flex;
@@ -16,8 +21,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*BASE STYLE*/
+
+/*HEADER*/
 .container {
-  height: 450px;
+  height: 28em;
   background-image: url("img/book1.jpg");
   filter: brightness(80%);
   width: 100%;
@@ -30,23 +38,26 @@
   align-items: center;
   flex-direction: column;
   color: #fff;
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font1);
 }
 .container h1 {
-  font-family: "Georama", sans-serif;
-  padding: 20px;
-  font-size: 75px;
+  font-family: var(--font2);
+  padding: 0.4em;
+  font-size: 5em;
   filter: brightness(100%);
   text-align: center;
 }
 .container p {
   color: #fff;
   font-style: italic;
-  font-family: "Georama", sans-serif;
+  font-family: var(--font2);
   text-align: center;
-  font-size: 25px;
+  font-size: 1.8em;
   filter: brightness(100%);
 }
+/*HEADER*/
+
+/*NAVBAR*/
 .navbar {
   margin-top: 0 1em 0 0;
   padding: 0 0 0 0;
@@ -81,72 +92,76 @@ ol li a:hover {
   letter-spacing: 0.1em;
   border-bottom: 1px solid #fff;
 }
+/*NAVBAR*/
+
+/*FOOTER*/
 .footer {
   background-color: #292929;
-  height: 325px;
+  height: 20em;
   bottom: 0;
   position: relative;
   width: 100%;
   top: 75%;
-  margin-top: 200px;
-  margin-bottom: 0px;
-  padding-top: 0px;
+  margin: 10em 0 0;
+  padding-top: 0;
 }
 .footer ul {
-  padding: 0px;
+  padding: 0;
   list-style: none;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.9em;
   line-height: 1.8;
   margin-bottom: 0;
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font1);
 }
 .footer li {
-  padding: 0 10px;
-  font-family: "Noto Sans", sans-serif;
+  padding: 0 1em;
+  font-family: var(--font1);
 }
 .footer ul a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   opacity: 0.8;
-  padding-top: 0px;
-  font-family: "Noto Sans", sans-serif;
+  padding-top: 0;
+  font-family: var(--font1);
   transition: 0.4s;
 }
 .footer ul a:hover {
   opacity: 1;
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font1);
   font-style: italic;
 }
 .footer .social {
   text-align: center;
-  padding-bottom: 40px;
-  padding-top: 35px;
+  padding: 2em 0 1em;
 }
 .footer .social > a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  font-size: 1.3em;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
   border: 1px solid #ccc;
-  margin: 0 8px;
-  color: white;
+  margin: 0 0.8em;
+  color: #fff;
   opacity: 0.75;
 }
 .footer .social > a:hover {
   opacity: 0.9;
 }
 .footer .copyright {
-  margin-top: 15px;
+  margin: 3em 0 0;
   text-align: center;
-  font-size: 13px;
+  font-size: 0.75;
   color: #aaa;
   margin-bottom: 0;
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font1);
 }
+/*FOOTER*/
+
+/*ICON BAR*/
 .icon-bar {
   position: fixed;
   top: 50%;
@@ -186,11 +201,16 @@ ol li a:hover {
   background: #bb0000;
   color: white;
 }
+/*ICON BAR*/
+
+/*CARD GRID*/
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-gap: 50px;
-  margin: 30px 150px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3em;
+  margin: 3em 5em;
+  justify-items: center;
+  align-items: center;
 }
 .card {
   display: grid;
@@ -200,21 +220,23 @@ ol li a:hover {
   transition: 0.3s;
   background-color: #fff;
   border-radius: 6px;
+  justify-items: center;
+  align-items: center;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 .card-content {
-  padding: 18px 16px;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 14px;
+  padding: 1em 1.5em;
+  font-family: var(--font1);
+  font-size: 0.9em;
 }
 .card-content a {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.3em;
+  line-height: 1em;
   color: #000;
   text-decoration: none;
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 .card-content a:hover {
   text-decoration: none;
@@ -233,31 +255,36 @@ ol li a:hover {
   border-radius: 6px 6px 0 0;
 }
 .top-articles {
-  font-family: "Noto Sans", sans-serif;
-  padding: 50px 0 0 0;
+  font-family: var(--font1);
+  padding: 2em 0 0 0;
   text-align: center;
   color: #3a3939;
 }
 .read-more {
-  font-size: 12px;
+  font-size: 1em;
   text-align: right;
-  padding-bottom: 14px;
+  padding-bottom: 1em;
 }
 .read-more a {
   color: rgb(58, 56, 56);
-  font-size: 12.5px;
+  font-size: 0.9em;
+  text-decoration: underline;
 }
 .read-more a:hover {
   color: rgb(95, 91, 91);
 }
+/*CARD GRID*/
+
+/*INTRODUCTION*/
 .intro {
-  margin: 80px 0 40px 0;
+  margin: 2.5em 0 1em 0;
   text-align: center;
   color: #3a3939;
-  font-family: "Noto-Sans", sans-serif;
+  font-family: var(--font1);
 }
 .intro p {
-  font-size: 14px;
-  padding: 5px 150px 5px;
+  font-size: 0.9em;
+  padding: 1em 10em 1em;
   font-style: italic;
 }
+/*INTRODUCTION*/
