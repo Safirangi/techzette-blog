@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
+/*BASE STYLE*/
 :root {
   --font1: "Noto Sans", sans-serif;
 }
-
 .body {
   display: flex;
   align-items: center;
@@ -18,6 +18,9 @@
   padding: 0;
   margin: 0;
 }
+/*BASE STYLE*/
+
+/*NAVBAR*/
 .brand {
   float: left;
   display: inline-flex;
@@ -64,7 +67,9 @@ ol li a:hover {
   letter-spacing: 0.1em;
   border-bottom: 1px solid #fff;
 }
+/*NAVBAR*/
 
+/*FORM*/
 h2 {
   padding-top: 0.7em;
 }
@@ -167,6 +172,9 @@ form button:hover {
   font-style: italic;
   color: #4b1b05;
 }
+/*FORM*/
+
+/*FOOTER*/
 .footer {
   background-color: #292929;
   height: 20em;
@@ -230,7 +238,9 @@ form button:hover {
   font-family: var(--font1);
   margin: 3em 0 0;
 }
+/*FOOTER*/
 
+/*RESPONSIVE SCREEN*/
 /*Responsive for 320px screen width devices*/
 @media (max-width: 320px) {
   * {
@@ -318,4 +328,4 @@ form button:hover {
     transition: 0.4s;
   }
 }
-
+/*RESPONSIVE SCREEN*/
