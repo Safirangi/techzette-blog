@@ -20,7 +20,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-/*BASE DESiGN*/
+/*BASE DESIGN*/
 
 /*HEADER*/
 .container {
@@ -163,32 +163,24 @@ ol li a:hover {
 .privacy-policy {
   color: #3a3939;
   text-align: justify;
-  padding: 130px 200px;
-  font-family: "Noto Sans", sans-serif;
-  line-height: 40px;
+  padding: 3em 15em;
+  font-family: var(--font1);
+  line-height: 2em;
 }
 .heading {
   text-align: center;
   text-decoration: none;
-  line-height: 60px;
 }
 .subheading {
   text-align: left;
   text-decoration: none;
-  line-height: 50px;
-}
-.para {
-  line-height: 30px;
-}
-.list {
-  line-height: 30px;
 }
 .info {
   font-style: italic;
   color: #747070;
-  line-height: 30px;
+  line-height: 2em;
   text-decoration: none;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .info a {
   text-decoration: none;
@@ -198,8 +190,11 @@ ol li a:hover {
   color: rgb(153, 151, 151);
 }
 .contact {
-  padding-top: 30px;
+  padding-top: 1em;
 }
+/*CONTENT*/
+
+/*ICON BAR*/
 .icon-bar {
   position: fixed;
   top: 50%;
@@ -239,37 +234,40 @@ ol li a:hover {
   background: #bb0000;
   color: white;
 }
+/*ICON BAR*/
+
+/*QUERY SECTION*/
 .query-section {
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font1);
 }
 .input[type="text"],
 select,
 textarea {
   width: 50%;
-  padding: 6px 50px;
+  padding: 1em 3em;
   border: 0.5px solid #ccc;
-  margin: 6px 300px 16px;
-  margin-bottom: 16px;
+  margin: 1em 20em 1em;
   resize: vertical;
+  display: block;
+  text-align: center;
 }
-
 input[type="submit"] {
   background-color: #292929;
-  color: white;
-  padding: 12px 10px;
+  color: #fff;
+  padding: 1em 1em;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
-  margin: 0 300px;
-  font-family: "Noto Sans", sans-serif;
+  border-radius: 0.4em;
+  margin: 0 18em;
+  font-family: var(--font1);
 }
-
 input[type="submit"]:hover {
   background-color: #4b1405;
 }
 form label {
-  font-style: "Georama", sans-serif;
-  font-size: 20px;
-  padding: 0px;
-  margin: 295px;
+  font-style: var(--font2);
+  font-size: 1em;
+  padding: 0 15em;
+  margin: 0 auto;
 }
+/*QUERY SECTION*/
