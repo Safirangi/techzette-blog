@@ -154,7 +154,7 @@ ol li a:hover {
 .footer .copyright {
   margin: 3em 0 0;
   text-align: center;
-  font-size: 0.75;
+  font-size: 0.75em;
   color: #aaa;
   margin-bottom: 0;
   font-family: var(--font1);
