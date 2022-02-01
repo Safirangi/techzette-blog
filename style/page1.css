@@ -26,7 +26,7 @@
 /*HEADER*/
 .container {
   height: 28em;
-  background-image: url("/img/github.jpg");
+  background-image: url("img/github.jpg");
   filter: brightness(85%);
   width: 100%;
   background-repeat: no-repeat;
