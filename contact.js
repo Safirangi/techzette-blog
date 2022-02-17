@@ -28,10 +28,24 @@ function contact() {
   }
   
   //Checking for '@' character in email entered.
-  else if (
+  /*else if (
     /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value)
   ) {
     return true;
   } else alert("You have entered an invalid email address!");
-  return false;
+  return false;*/
+}
+
+//Checks for valid email address format
+function emailValidate(inputText) {
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (inputText.value.match(mailformat)) {
+    alert("Valid email address!");
+    document.form1.text1.focus();
+    return true;
+  } else {
+    alert("You have entered an invalid email address!");
+    document.form1.text1.focus();
+    return false;
+  }
 }
