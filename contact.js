@@ -26,4 +26,12 @@ function contact() {
     alert("You must agree to the Terms & Privacy first");
     return false;
   }
+  
+  //Checking for '@' character in email entered.
+  else if (
+    /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value)
+  ) {
+    return true;
+  } else alert("You have entered an invalid email address!");
+  return false;
 }
