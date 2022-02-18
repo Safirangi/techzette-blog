@@ -53,8 +53,8 @@
               <a href="#" class="forgot">Forgot Password?</a>
               <div class="btn">
                 
-            <!--Button type 'Submit', since javascript validation doesn't work with type=button-->
-            <button type="submit" class="submit">Log In</button>
+            <!--Button type=submit, since javascript validation doesn't work with type=button-->
+            <button type="submit" class="submit" onclick="emailValidate(document.form.email)">Log In</button>
             <button type="button" class="cancel">Cancel</button>
             </div>
           </form>
