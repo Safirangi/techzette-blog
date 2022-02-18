@@ -51,20 +51,22 @@
               <a href="login.html" class="login">Login</a>
             </p>
           </div>
-      <form name="signup" onsubmit="return SignUp();" method="post" action="abc.jsp">
-            <input type="text" name="fullname" placeholder="Full Name"/>
+            
+      <form name="form" action="/" method="post" id="form" onsubmit="return signup()">
+            <input type="text" name="name" id="name" placeholder="Full Name"/>
             <input type="email" name="email" id="email" placeholder="Email"/>
-            <input type="password" name="password" placeholder="Password"/>
+            <input type="password" name="password" id="password" placeholder="Password"/>
+        
             <div class="check-box">
-              <input type="checkbox" id="check" name="checkbox" required/>
+              <input type="checkbox" id="checkbox" name="checkbox" value="check"/>
               <label for="check">
                 I have read and agree to the
                 <a href="policy.html" class="policy">Terms & Privacy</a>
               </label>
             </div>
-
-            <button type="submit">Sign Up</button>
+            <button type="submit" onclick="emailValidate(document.form.email)">Sign Up</button>
           </form>
+            
         </div>
         </div>
       </div>
