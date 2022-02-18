@@ -26,7 +26,7 @@ function contact() {
     alert("You must agree to the Terms & Privacy first");
     return false;
   }
-
+}
 
 //Checks for valid email address format
 function emailValidate(inputText) {
