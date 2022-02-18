@@ -46,15 +46,17 @@
               <p><a href="signup.html" class="signup">Sign Up</a></p>
             </p>
           </div>
-          <form>
-            <input type="email" name="email" placeholder="Email" required />
-            <input type="password" name="password" placeholder="Password" required/>
+        
+          <form name="form" action="/" method="post" id="form" onsubmit="return login()">
+            <input type="email" name="email" placeholder="Email" id="email"/>
+            <input type="password" name="password" placeholder="Password" id="password"/>
               <a href="#" class="forgot">Forgot Password?</a>
               <div class="btn">
             <button type="button" class="submit">Log In</button>
             <button type="button" class="cancel">Cancel</button>
             </div>
           </form>
+        
         </div>
       </div>
 <!--Login Form-->
