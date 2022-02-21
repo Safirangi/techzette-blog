@@ -68,3 +68,13 @@ function emailValidate(inputText) {
     return false;
   }
 }
+
+//Show Password feature for Password Input
+function viewPW() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
