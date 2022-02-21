@@ -55,7 +55,14 @@
       <form name="form" action="/" method="post" id="form" onsubmit="return signup()">
             <input type="text" name="name" id="name" placeholder="Full Name"/>
             <input type="email" name="email" id="email" placeholder="Email"/>
+        
+        <!--Password-->
             <input type="password" name="password" id="password" placeholder="Password"/>
+        <div class="check-box">
+            <input type="checkbox" onclick="viewPW()" class="show-pw"/>
+            <label for="check" class="show-pw-label">Show Password</label>
+          </div>
+        <!--Password-->
         
             <div class="check-box">
               <input type="checkbox" id="checkbox" name="checkbox" value="check"/>
