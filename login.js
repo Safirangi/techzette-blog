@@ -54,3 +54,13 @@ function emailValidate(inputText) {
   }
 }
 
+//Show Password feature
+function viewPW() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
