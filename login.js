@@ -2,6 +2,8 @@ function login() {
   var email = document.form.email.value;
   var password = document.form.password.value;
  
+  //Regex Pattern for password validation
+  let pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
   
   //Checks the value of the email for blank, if blank an alert message pops up.
   if (email == "" || email == null) {
@@ -36,6 +38,12 @@ function login() {
   //Checks if the value of the password string for consecutive string of numbers. If equal, an invalid meassage pops up. 
   else if(password == '0000000' || password == '1111111'  || password == '2222222' || password == '3333333' || password == '4444444' || password == '5555555' || password == '6666666' || password == '7777777' || password == '8888888' || password == '9999999' || password == '0123456' || password == '1234567') {
     alert("Password Invalid");
+    return false;
+  }
+  
+  //Checks if the password string matches the regex consisting of altleast one lowercase, uppercase, special character and number.
+  else if(pattern.test(password) != true) {
+    alert("Password should consist of atleast one special character, lowercase & uppercase character and number");
     return false;
   }
 }
