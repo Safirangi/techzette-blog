@@ -2,6 +2,9 @@ function signup() {
   var name = document.form.name.value;
   var email = document.form.email.value;
   var password = document.form.password.value;
+  
+  //Regex password string
+  let pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
 
   //Checks the value of the name for blank, if blank an alert message pops up.
   if (name == null || name == "") {
@@ -45,6 +48,12 @@ function signup() {
     return false;
   }
 
+  //Checks if the password string matches the regex consisting of altleast one lowercase, uppercase, special character and number.
+  else if(pattern.test(password) != true) {
+    alert("Password should consist of atleast one special character, lowercase & uppercase character and number");
+    return false;
+  }
+  
   //Checks the value of the checkbox for unchecked, if unchecked an alert message pops up.
   else if (!this.form.checkbox.checked) {
     alert("You must agree to the Terms & Privacy first");
