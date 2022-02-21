@@ -157,7 +157,7 @@ form input:focus {
   accent-color: #4b1405;
 }
 .check-box label {
-  font-size: 0.4em;
+  font-size: 0.75em;
   padding: 0 1em;
 }
 .signup,
