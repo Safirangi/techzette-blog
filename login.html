@@ -52,10 +52,17 @@
         
           <form name="form" action="/" method="post" id="form" onsubmit="return login()">
             <input type="email" name="email" placeholder="Email" id="email"/>
+            
+            <!--Password-->
             <input type="password" name="password" placeholder="Password" id="password"/>
+            <div class="check-box">
+              <input type="checkbox" onclick="viewPW()" class="show-pw"/>
+              <label for="check" class="show-pw-label">Show Password</label>
+            </div>
               <a href="#" class="forgot">Forgot Password?</a>
-              <div class="btn">
-                
+            <!--Password-->
+            
+            <div class="btn">
             <!--Button type=submit, since javascript validation doesn't work with type=button-->
             <button type="submit" class="submit" onclick="emailValidate(document.form.email)">Log In</button>
             <button type="button" class="cancel">Cancel</button>
