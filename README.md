@@ -45,3 +45,6 @@ page. This section is similar in all webpages throughout the website.
 
 ### Sign in page
 ![Signin page](img/sign.png)
+
+### Log In Page
+![Log in Page](img/login.png)
