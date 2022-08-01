@@ -24,12 +24,12 @@
 
 // servername -> localhost
 // username -> root
-// password -> empty
+// password -> empty or password
 // database name -> techzette
 // port number -> 3307
 
 //port 3306 and 3308 are used by other programs
-$conn = new mysqli('localhost', 'root', 'safirangi', 'techzette', 3307);
+$conn = new mysqli('localhost', 'root', '', 'techzette', 3307);
 
 //database connection
 if($conn === false){
@@ -39,12 +39,11 @@ if($conn === false){
 
     $name = $_POST['name'];
     $email = $_POST['email'];
-
     //encrypting password in phpmyadmin : using MD5 algorithm (SHA1 is alternative to MD5)
     $password = md5($_POST['password']);
 
 //insert query execution
-//table name is details, now changed to studentInfo
+//table name is signIn
 
 $sql = "INSERT INTO signIn /*(name, email, password)*/ VALUES ('$name', '$email','$password')";
 

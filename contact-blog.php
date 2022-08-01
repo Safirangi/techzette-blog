@@ -41,9 +41,9 @@ if($conn === false){
     $email = $_POST['email'];
 
 //insert query execution
-//table name is details, now changed to studentInfo
+//table name is contact
 
-$sql = "INSERT INTO logIn /*(email, password)*/ VALUES ('$name','$email')";
+$sql = "INSERT INTO contact /*(name, email)*/ VALUES ('$name','$email')";
 
 if(mysqli_query($conn, $sql)){
     echo "<h3>Data stored in a database successfully! </h3>";

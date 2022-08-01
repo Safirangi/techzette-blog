@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in | techzette</title>
+    <title>Log in | techzette</title>
     <style>
             @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
@@ -42,7 +42,7 @@ if($conn === false){
     $password = md5($_POST['password']);
 
 //insert query execution
-//table name is details, now changed to studentInfo
+//table name is logIn
 
 $sql = "INSERT INTO logIn /*(email, password)*/ VALUES ('$email','$password')";
 
