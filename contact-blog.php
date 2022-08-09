@@ -58,7 +58,7 @@ if(isset($_POST["submit"])) {
     move_uploaded_file($tname, $uploads_dir.'/'.$pname);
 
     //sql query to insert into database
-    $sql = "INSERT into fileup(name, email, title, techzette-blog) VALUES ('$name', '$email', '$title', '$pname')";
+    $sql = "INSERT into contact(name, email, title, techzette-blog) VALUES ('$name', '$email', '$title', '$pname')";
 
 
 }
