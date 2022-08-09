@@ -37,6 +37,29 @@ if($conn === false){
         . mysqli_connect_error());
 }
 
+if(isset($_POST["submit"])) {
+
+    //retrieve the file title
+    $title = $_POST["title"];
+
+    //file name with a random number so that similar files do not get replaced
+    $pname = rand(1000, 10000)."-".$_FILES["file"]["name"];
+
+    //temporary file name to store file
+    $tname = $_FILES["files"]["tmp_name"];
+
+    //upload directory path
+    $uploads_dir = '/techzette-blog';
+
+    //to move the upload to a specific location 
+    move_uploaded_file($tname, $uploads_dir.'/'.$pname);
+
+    //sql query to insert into database
+    $sql = "INSERT into fileup(title, techzette-blog) VALUES ('$title', '$pname')";
+
+    
+}
+
     $name = $POST_['name'];
     $email = $_POST['email'];
 
