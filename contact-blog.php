@@ -29,7 +29,10 @@
 // port number -> 3307
 
 //port 3306 and 3308 are used by other programs
-$conn = new mysqli('localhost', 'root', '', 'techzette', 3307);
+$conn = new mysqli('localhost', 'root', 'safirangi', 'techzette', 3307);
+
+    $name = $POST_['name'];
+    $email = $_POST['email'];
 
 //database connection
 if($conn === false){
@@ -55,18 +58,17 @@ if(isset($_POST["submit"])) {
     move_uploaded_file($tname, $uploads_dir.'/'.$pname);
 
     //sql query to insert into database
-    $sql = "INSERT into fileup(title, techzette-blog) VALUES ('$title', '$pname')";
+    $sql = "INSERT into fileup(name, email, title, techzette-blog) VALUES ('$name', '$email', '$title', '$pname')";
 
-    
+
 }
 
-    $name = $POST_['name'];
-    $email = $_POST['email'];
+    
 
 //insert query execution
-//table name is details, now changed to studentInfo
+//table name is 
 
-$sql = "INSERT INTO logIn /*(email, password)*/ VALUES ('$name','$email')";
+/*$sql = "INSERT INTO fileup /*(email, password)*/ /*VALUES ('$name','$email')";*/
 
 if(mysqli_query($conn, $sql)){
     echo "<h3>Data stored in a database successfully! </h3>";
