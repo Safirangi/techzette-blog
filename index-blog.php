@@ -44,9 +44,9 @@ if($conn === false){
     $password = md5($_POST['password']);
 
 //insert query execution
-//table name is details, now changed to signIn
+//table name : signin_page
 
-$sql = "INSERT INTO signIn /*(name, email, password)*/ VALUES ('$name', '$email','$password')";
+$sql = "INSERT INTO signin_page /*(name, email, password)*/ VALUES ('$name', '$email','$password')";
 
 if(mysqli_query($conn, $sql)){
     echo "<h3>Data stored in a database successfully! </h3>";
