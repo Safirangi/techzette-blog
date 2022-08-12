@@ -44,7 +44,7 @@ if($conn === false){
     $password = md5($_POST['password']);
 
 //insert query execution
-//table name is details, now changed to studentInfo
+//table name is details, now changed to signIn
 
 $sql = "INSERT INTO signIn /*(name, email, password)*/ VALUES ('$name', '$email','$password')";
 
