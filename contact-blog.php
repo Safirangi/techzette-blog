@@ -46,19 +46,19 @@ if(isset($_POST["submit"])) {
     $title = $_POST["title"];
 
     //file name with a random number so that similar files do not get replaced
-    $pname = rand(1000, 10000)."-".$_FILES["file"]["name"];
+    $pname = /*rand(1000, 10000)."-".*/$_FILES["file"]["name"];
 
     //temporary file name to store file
-    $tname = $_FILES["files"]["tmp_name"];
+    $tname = $_FILES["file"]["tmp_name"];
 
     //upload directory path
-    $uploads_dir = '/techzette-blog';
+    //$uploads_dir = '/techzette-blog';
 
     //to move the upload to a specific location 
-    move_uploaded_file($tname, $uploads_dir.'/'.$pname);
+    move_uploaded_file($tname, /*$uploads_dir.*/'techzette-blog/'.$pname);
 
     //sql query to insert into database
-    $sql = "INSERT into contact /*(name, email, title, techzette-blog)*/ VALUES ('$tname', '$email', '$title', '$pname')";
+    $sql = "INSERT into contact_form /*(name, email, title, techzette-blog)*/ VALUES ('$tname', '$name', '$email', '$title', '$pname')";
 
 
 }
