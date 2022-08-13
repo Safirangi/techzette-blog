@@ -29,7 +29,7 @@ function contact() {
 }
 
 //Checks for valid email address format
-function emailValidate(inputText) {
+/*function emailValidate(inputText) {
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   var email = document.form.email.value;
   
@@ -43,3 +43,4 @@ function emailValidate(inputText) {
     return false;
   }
 }
+*/
