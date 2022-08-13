@@ -31,7 +31,7 @@
 //port 3306 and 3308 are used by other programs
 $conn = new mysqli('localhost', 'root', 'safirangi', 'techzette', 3307);
 
-    /*$name = $POST_['name'];*/
+    $name = $POST_['name'];
     $email = $_POST['email'];
 
 //database connection
@@ -66,7 +66,7 @@ if(isset($_POST["submit"])) {
     
 
 //insert query execution
-//table name is 
+//table name is contact
 
 /*$sql = "INSERT INTO fileup /*(email, password)*/ /*VALUES ('$name','$email')";*/
 
