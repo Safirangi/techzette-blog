@@ -31,7 +31,7 @@
 //port 3306 and 3308 are used by other programs
 $conn = new mysqli('localhost', 'root', 'safirangi', 'techzette', 3307);
 
-    $name = $POST_['name'];
+    $name = $POST_['fname'];
     $email = $_POST['email'];
 
 //database connection
@@ -46,27 +46,28 @@ if(isset($_POST["submit"])) {
     $title = $_POST["title"];
 
     //file name with a random number so that similar files do not get replaced
-    $pname = /*rand(1000, 10000)."-".*/$_FILES["file"]["name"];
+    //file_name variable takes the name of the file
+    $file_name = /*rand(1000, 10000)."-".*/ $_FILES["file"]["name"];
 
     //temporary file name to store file
-    $tname = $_FILES["file"]["tmp_name"];
+    $temp_name = $_FILES["file"]["tmp_name"];
 
-    //upload directory path
-    //$uploads_dir = '/techzette-blog';
+    //upload directory path (where the files are stored)
+    //$uploads_dir = 'file-uploads/';
 
     //to move the upload to a specific location 
-    move_uploaded_file($tname, /*$uploads_dir.*/'techzette-blog/'.$pname);
+    move_uploaded_file($temp_name, /*$uploads_dir.*/'file-uploads/'.$file_name);
 
     //sql query to insert into database
-    $sql = "INSERT into contact_form /*(name, email, title, techzette-blog)*/ VALUES ('$tname', '$name', '$email', '$title', '$pname')";
+    $sql = "INSERT into contact_form /*(name, email, title, techzette-blog)*/ VALUES ('$temp_name', '$name', '$email', '$title', '$file_name')";
 
 
-}
+//}
 
     
 
 //insert query execution
-//table name is contact
+//table name is contact_form
 
 /*$sql = "INSERT INTO fileup /*(email, password)*/ /*VALUES ('$name','$email')";*/
 
@@ -80,6 +81,8 @@ if(mysqli_query($sql, $conn)){
 } else{
     echo "ERROR: Hush! Sorry $sql. "
         . mysqli_error($conn);
+}
+
 }
 
 // close connection
