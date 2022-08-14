@@ -31,7 +31,7 @@
 //port 3306 and 3308 are used by other programs
 $conn = new mysqli('localhost', 'root', 'safirangi', 'techzette', 3307);
 
-    $name = $POST_['fname'];
+    $fname = $POST_['fname'];
     $email = $_POST['email'];
 
 //database connection
@@ -59,7 +59,7 @@ if(isset($_POST["submit"])) {
     move_uploaded_file($temp_name, /*$uploads_dir.*/'file-uploads/'.$file_name);
 
     //sql query to insert into database
-    $sql = "INSERT into contact_form /*(name, email, title, techzette-blog)*/ VALUES ('$temp_name', '$name', '$email', '$title', '$file_name')";
+    $sql = "INSERT into contact_form /*(name, email, title, techzette-blog)*/ VALUES ('$temp_name', '$fname', '$email', '$title', '$file_name')";
 
 
 //}
