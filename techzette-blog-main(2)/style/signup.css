@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+/*BASE STYLE*/
+:root {
+  --font1: "Noto Sans", sans-serif;
+}
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  flex-direction: column;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+/*BASE STYLE*/
+
+/*NAVBAR*/
+.brand {
+  float: left;
+  display: inline-flex;
+  justify-content: left;
+  color: #fff;
+  margin-top: 1em 0 0 1em;
+  padding: 0.5em 0 0 0.7em;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: 0.4s;
+  font-family: var(--font1);
+}
+.brand:hover {
+  letter-spacing: 0.1em;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #fff;
+  font-family: var(--font1);
+}
+.navbar {
+  margin-top: 0.5em 1em 0 0;
+  padding: 2em 1.5em 0 0;
+  display: inline-flex;
+  justify-content: space-between;
+  float: right;
+  font-size: 1em;
+  font-family: var(--font1);
+}
+ol li {
+  list-style: none;
+  display: inline;
+  margin: 0 2em;
+}
+ol li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+  letter-spacing: 0.09em;
+  padding-bottom: 1em;
+}
+ol li a:hover {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #fff;
+}
+/*NAVBAR*/
+
+/*FORM*/
+h2 {
+  padding-top: 0.7em;
+}
+.container {
+  width: 18em;
+  height: 28em;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  padding: 0 1em;
+  font-family: var(--font1);
+  opacity: 0.875;
+  border-radius: 0.4em;
+}
+.intro-text p {
+  margin: 0.4em 0;
+  font-size: 0.8em;
+}
+.intro-text p a {
+  color: #121212;
+}
+form {
+  height: 19em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+form input {
+  padding: 1em 1em;
+  outline: none;
+  border: 1px solid #8c8f94;
+  font-family: var(--font1);
+  background-color: #fff;
+  color: #4b1b05;
+}
+form input:focus {
+  border-color: #4b1b05;
+  color: #4b1b05;
+}
+.check-box {
+  display: flex;
+  accent-color: #4b1b05;
+}
+.check-box label {
+  font-size: 0.6em;
+  padding: 0 1em;
+}
+form button {
+  border: none;
+  outline: none;
+  padding: 0.7em 0;
+  background: #292929;
+  color: #fff;
+  font-size: 1.1em;
+  /*box-shadow: 0 7px 15px rbga(22, 5, 107, 0.3); */
+  font-family: var(--font1);
+  box-shadow: inset 0 0 0 0 #4b1b05;
+  border-radius: 0.1em;
+  transition: ease-out 0.4s;
+}
+form button:hover {
+  box-shadow: inset 18em 0 0 0 #4b1b05;
+  cursor: pointer;
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 2em 0 0 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/*.glass {
+  height: 500px;
+  width: 1000px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}    */
+.policy {
+  font-style: normal;
+  color: #301302;
+}
+.policy:hover {
+  font-style: italic;
+  color: #4b1b05;
+  text-decoration: none;
+}
+.login {
+  font-size: 1em;
+  font-style: normal;
+  color: #301302;
+}
+.login:hover {
+  font-style: italic;
+  color: #4b1b05;
+}
+/*FORM*/
+
+/*FOOTER*/
+.footer {
+  background-color: #292929;
+  height: 20em;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  top: 75%;
+  margin: 11em 0 0;
+  padding-top: 0;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.8;
+  margin-bottom: 0;
+  font-family: var(--font1);
+}
+.footer li {
+  padding: 0 1em;
+  font-family: var(--font1);
+}
+.footer ul a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  padding-top: 0;
+  font-family: var(--font1);
+  transition: 0.4s;
+}
+.footer ul a:hover {
+  opacity: 1;
+  font-family: var(--font1);
+  font-style: italic;
+}
+.footer .social {
+  text-align: center;
+  padding: 2em 0 1em;
+}
+.footer .social > a {
+  font-size: 1.3em;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 0.8em;
+  color: #fff;
+  opacity: 0.75;
+}
+.footer .social > a:hover {
+  opacity: 0.9;
+}
+.footer .copyright {
+  text-align: center;
+  font-size: 0.75em;
+  color: #aaa;
+  font-family: var(--font1);
+  margin: 3em 0 0;
+}
+/*FOOTER*/
+
+/*RESPONSIVE SCREEN*/
+/*Responsive for 320px screen width devices*/
+@media (max-width: 320px) {
+  * {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .container {
+    width: 14em;
+    height: 23em;
+    padding: 0 2em;
+    margin: 1em 0;
+  }
+  .brand {
+    font-size: 1em;
+    text-align: center;
+    justify-content: center;
+    margin: 0.5em 3em;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 3em;
+    background: #292929;
+    opacity: 0.8;
+  }
+  .navbar ol li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-bottom: 1px solid #fff;
+  }
+  h2 {
+    padding-top: 0.5em;
+    font-size: 1.2em;
+  }
+  .intro-text p {
+    margin: 0.2em 0 0 0;
+    font-size: 0.7em;
+  }
+  form {
+    height: 16em;
+  }
+  form input {
+    padding: 0.5em 0.7em;
+  }
+  form button {
+    padding: 0.7em 0;
+    font-size: 0.9em;
+  }
+  .card {
+    position: absolute;
+    margin: 15em 0 0 0;
+  }
+  .footer {
+    background-color: #292929;
+    height: 20em;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    margin: 22em 0 0;
+    padding-top: 0;
+  }
+  .footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.8;
+    margin-bottom: 0;
+  }
+  .footer li {
+    padding: 0 1em;
+    font-family: var(--font1);
+  }
+  .footer ul a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    padding-top: 0;
+    font-family: var(--font1);
+    transition: 0.4s;
+  }
+}
+/*RESPONSIVE SCREEN*/
