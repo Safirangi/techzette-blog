@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Georama&display=swap");
+
+:root {
+  --font1: "Noto Sans", sans-serif;
+  --font2: "Georama", sans-serif;
+}
+
+.body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  background-color: #fff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 28em;
+  /*background-image: url("/img/book1.jpg");*/
+  filter: brightness(85%);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: var(--font1);
+}
+header img {
+  height: 28em;
+  width: 100%;
+  /*background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;*/
+}
+.container img {
+  height: 3em;
+  width: 3em;
+  border-radius: 0.2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+.container h1 {
+  font-family: var(--font2);
+  padding: 0.4em;
+  font-size: 5em;
+  filter: brightness(100%);
+  text-align: center;
+}
+.container p {
+  color: #fff;
+  font-style: italic;
+  font-family: var(--font2);
+  text-align: center;
+  font-size: 1.8em;
+  filter: brightness(100%);
+}
+
+/*Navigation Bar*/
+.navbar {
+  margin: 0 1em 0 0;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 0;
+  font-size: 1em;
+  font-family: var(--font2);
+  color: #fff;
+  background-color: #292929;
+  width: 100%;
+  height: 3em;
+}
+/*.navbar img {
+  height: 25px;
+  width: 50px;
+  border-radius: 0.2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}*/
+ol li {
+  list-style: none;
+  display: inline;
+  margin: 0 3em;
+  color: #fff;
+  background-color: #292929;
+}
+ol li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+  letter-spacing: 0.07em;
+  padding-bottom: 1em;
+}
+ol li a:hover {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #fff;
+}
+/*Navigation Bar*/
+
+/*Footer*/
+.footer {
+  background-color: #292929;
+  height: 20em;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  top: 75%;
+  margin: 11em 0 0;
+  padding-top: 0;
+}
+.footer ul {
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.8;
+  margin-bottom: 0;
+  font-family: var(--font1);
+}
+.footer li {
+  padding: 0 1em;
+  font-family: var(--font1);
+}
+.footer ul a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  padding-top: 0;
+  font-family: var(--font1);
+  transition: 0.4s;
+}
+.footer ul a:hover {
+  opacity: 1;
+  font-family: var(--font1);
+  font-style: italic;
+}
+.footer .social {
+  text-align: center;
+  padding: 2em 0 1em;
+}
+.footer .social > a {
+  font-size: 1.3em;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 0.8em;
+  color: #fff;
+  opacity: 0.75;
+}
+.footer .social > a:hover {
+  opacity: 0.9;
+}
+.footer .copyright {
+  margin: 3em 0 0;
+  text-align: center;
+  font-size: 0.75em;
+  color: #aaa;
+  font-family: var(--font1);
+}
+/*Footer*/
+
+/*Introduction text*/
+.introduction {
+  font-family: var(--font1);
+  font-style: italic;
+  text-align: center;
+  padding: 3em 0 2em 0;
+  font-size: 1em;
+}
+/*Introduction text*/
+
+/*Icon Bar*/
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar a:hover {
+  background-color: #000;
+}
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+.twitter {
+  background: #55acee;
+  color: white;
+}
+.google {
+  background: #dd4b39;
+  color: white;
+}
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+/*Icon Bar*/
+
+/*Grid*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3em;
+  margin: 3em 5em;
+  justify-items: center;
+  align-items: center;
+}
+.card {
+  display: grid;
+  grid-template-rows: max-content 210px 1fr;
+  margin: auto;
+  background: #fff;
+  border-radius: 6px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  justify-items: center;
+  align-items: center;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+.card-content {
+  padding: 1em 1.5em;
+  font-family: var(--font1);
+  font-size: 0.9em;
+}
+.card-content a {
+  font-size: 1.3em;
+  line-height: 1em;
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 0;
+}
+.card-content a:hover {
+  text-decoration: none;
+  color: rgb(26, 25, 25);
+}
+.card-content p {
+  color: #535151;
+}
+.card-content p:hover {
+  color: rgb(26, 25, 25);
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 0 0;
+}
+.top-articles {
+  font-family: var(--font1);
+  padding: 2em 0 0 0;
+  text-align: center;
+  color: #3a3939;
+}
+.read-more {
+  font-size: 1em;
+  text-align: right;
+  padding-bottom: 1em;
+}
+.read-more a {
+  color: rgb(58, 56, 56);
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+.read-more a:hover {
+  color: rgb(95, 91, 91);
+}
+/*grid*/
+
+/*Splide.js Slider*/
+.splide {
+  max-width: 890px;
+  height: 500px;
+  image-resolution: initial;
+  overflow: hidden;
+  margin: 3em auto;
+  position: relative;
+}
+.splide .hero-heading-main {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  color: #222;
+  font-family: var(--font1);
+  right: 0;
+  background: #fbfbfb;
+  width: 290px;
+  text-align: center;
+  margin: 1em auto;
+  border-radius: 0.2em;
+  opacity: 0.7;
+}
+
+/*Splide.js Slider*/
+
+
+/*CONTACT FORM*/
+.contact-form {
+    width: 32em;
+    height: 42em;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-family: var(--font1);
+    opacity: 0.875;
+    padding: 2em 1.5em;
+    margin: 0 auto;
+    border-radius: 0.4em;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  form {
+    height: 42em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: var(--font1);
+  }
+  form input {
+    padding: 1em;
+    outline: none;
+    border: 1px solid #8c8f94;
+    font-family: var(--font1);
+    background-color: #fff;
+    color: #4b1b05;
+  }
+  form input:focus {
+    border-color: #4b1b05;
+    color: #4b1b05;
+  }
+  .check-box {
+    display: flex;
+    accent-color: #4b1b05;
+  }
+  .check-box label {
+    font-size: 0.85em;
+    padding: 0 0.5em;
+  }
+  form button {
+    border: none;
+    outline: none;
+    padding: 1em 0;
+    background: #292929;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: var(--font1);
+    box-shadow: inset 0 0 0 0 #4b1b05;
+    border-radius: 0.2em;
+    transition: ease-out 0.4s;
+  }
+  form button:hover {
+    box-shadow: inset 300px 0 0 0 #4b1b05;
+    cursor: pointer;
+  }
+  form a {
+    color: #121212;
+  }
+  form a:hover {
+    color: #4b1b05;
+    font-style: italic;
+  }
+  .intro-text h2 {
+    margin: 0 1em 1em;
+    font-size: 20px;
+  }
+  .social {
+    text-align: center;
+    padding: 1em 0 1em 0;
+  }
+  .social > a {
+    font-size: 1.3em;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #121212;
+    margin: 0 0.8em;
+    color: #121212;
+    opacity: 0.75;
+  }
+  .social > a:hover {
+    opacity: 0.9;
+  }
+  /*CONTACT FORM*/

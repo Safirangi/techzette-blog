@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+
+.root {
+  --font1: "Noto Sans", sans-serif;
+}
+.body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover; /*or background-size: 100%;  */
+  flex-direction: column;
+  background-attachment: fixed;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*BASE STYLE*/
+
+/*NAVBAR*/
+.brand {
+  float: left;
+  display: inline-flex;
+  justify-content: left;
+  color: #fff;
+  margin-top: 1em 0 0 1em;
+  padding: 0.5em 0 0 0.7em;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: 0.4s;
+  font-family: var(--font1);
+}
+.brand:hover {
+  letter-spacing: 0.1em;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #fff;
+  font-family: var(--font1);
+}
+.navbar {
+  margin-top: 0.5em 1em 0 0;
+  padding: 2em 1.5em 0 0;
+  display: inline-flex;
+  justify-content: space-between;
+  float: right;
+  font-size: 1em;
+  font-family: var(--font1);
+}
+ol li {
+  list-style: none;
+  display: inline;
+  margin: 0 2em;
+}
+ol li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+  letter-spacing: 0.09em;
+  padding-bottom: 1em;
+}
+ol li a:hover {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #fff;
+}
+/*NAVBAR*/
+
+/*HEADER*/
+h2 {
+  text-align: center;
+  font-family: var(--font1);
+  padding-top: 0.7em;
+}
+p {
+  text-align: center;
+  font-family: var(--font1);
+}
+/*HEADER*/
+
+/*FORM*/
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.submit {
+  width: 5.5em;
+  height: 2.5em;
+  box-shadow: inset 0 0 0 0 #4b1b05;
+  font-family: var(--font1);
+  border-radius: 0.1em;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+.submit:hover {
+  box-shadow: inset 100px 0 0 0 #4b1b05;
+  cursor: pointer;
+}
+.cancel {
+  width: 5.5em;
+  height: 2.5em;
+  box-shadow: inset 0 0 0 0 #4b1b05;
+  font-family: var(--font1);
+  border-radius: 0.1em;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+.cancel:hover {
+  box-shadow: inset 100px 0 0 0 #4b1b05;
+  cursor: pointer;
+}
+.container {
+  width: 18em;
+  height: 24em;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  padding: 0 0;
+  font-family: var(--font1);
+  opacity: 0.875;
+  border-radius: 0.2em;
+}
+.intro-text p {
+  margin: 0.5em 0;
+  font-size: 0.8em;
+}
+.intro-text p a {
+  color: #121212;
+}
+form {
+  height: 18em;
+  width: 14em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+form input {
+  padding: 1em 1em;
+  outline: none;
+  border: 1px solid #8c8f94;
+  font-family: var(--font1);
+}
+form input:focus {
+  border-color: #301302;
+}
+.check-box {
+  display: flex;
+  accent-color: #4b1405;
+}
+.check-box label {
+  font-size: 0.75em;
+  padding: 0 1em;
+}
+.signup,
+.forgot {
+  font-size: 0.8em;
+  font-style: normal;
+  color: #301302;
+}
+.signup:hover,
+.forgot:hover {
+  font-style: italic;
+  color: #4b1405;
+  text-decoration: none;
+}
+form button {
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  background: #292929;
+  color: #fff;
+  font-size: 1.1em;
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 1em 0 0 0;
+}
+/*FORM*/
+
+/*FOOTER*/
+.footer {
+  background-color: #292929;
+  height: 20em;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  top: 75%;
+  margin: 11em 0 0;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.8;
+  margin-bottom: 0;
+  font-family: var(--font1);
+}
+.footer li {
+  padding: 0 1em;
+  font-family: var(--font1);
+}
+.footer ul a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  padding-top: 0px;
+  font-family: var(--font1);
+  transition: 0.4s;
+}
+.footer ul a:hover {
+  opacity: 1;
+  font-family: var(--font1);
+  font-style: italic;
+}
+.footer .social {
+  text-align: center;
+  padding: 2em 0 1em;
+}
+.footer .social > a {
+  font-size: 1.3em;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 0.8em;
+  color: #fff;
+  opacity: 0.75;
+}
+.footer .social > a:hover {
+  opacity: 0.9;
+}
+.footer .copyright {
+  margin: 3em 0 0;
+  text-align: center;
+  font-size: 0.75em;
+  color: #aaa;
+  font-family: var(--font1);
+}
+/*FOOTER*/
+

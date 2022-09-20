@@ -38,6 +38,7 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="aboutUs.html">About Us</a></li>
+            
           </ol>
         </div>
       </header>
@@ -54,8 +55,8 @@
             </p>
           </div>
         
-          <form name="form" action="login.php" method="post" id="form" >
-            <?php include('error.php'); ?>
+          <form name="form" action="validate.php" method="post" id="form" >
+            
   
             <input type="email" name="email" placeholder="Email" id="email"/>
             
@@ -70,7 +71,7 @@
             
             <div class="btn">
             <!--Button type=submit, since javascript validation doesn't work with type=button-->
-            <button type="submit" class="submit" name="login_user" >Log In</button>
+            <button type="submit" class="submit" name="login" >Log In</button>
             <button type="button" class="cancel">Cancel</button>
             </div>
           </form>
