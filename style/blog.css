@@ -288,3 +288,13 @@ ol li a:hover {
   font-style: italic;
 }
 /*INTRODUCTION*/
+
+/*SEARCH*/
+.search {
+  text-align: center;
+  font-family: var(--font1);
+}
+.input-search {
+  padding: 0.5em 1em;
+}
+/*SEARCH*/
